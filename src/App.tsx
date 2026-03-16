@@ -81,7 +81,10 @@ const translations = {
 }
 
 function App() {
-  const [lang, setLang] = useState<Language>('fr')
+  const [lang, setLang] = useState<Language>(() => {
+    const browserLang = navigator.language || 'fr';
+    return browserLang.startsWith('en') ? 'en' : 'fr';
+  })
   const t = translations[lang]
 
   useEffect(() => {
