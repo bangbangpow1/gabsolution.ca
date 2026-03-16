@@ -176,6 +176,7 @@ function App() {
                 <div className="form-group">
                   <textarea name="message" placeholder={t.contact.messagePlaceholder} rows={5} required></textarea>
                 </div>
+                <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <button type="submit" className="btn btn-primary">{t.contact.send}</button>
               </form>
             </div>
