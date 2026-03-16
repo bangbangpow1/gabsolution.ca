@@ -37,6 +37,12 @@ const translations = {
         zones: 'Zones: West Island, Laval, South Shore',
         specialty: 'Spec: Windows 11 / Linux Customization',
         mission: 'Mission: Zero Downtime',
+      },
+      labels: {
+        location: 'LOCATION',
+        zones: 'COVERAGE',
+        specialty: 'SPECIALTY',
+        mission: 'PROTOCOL',
       }
     },
     contact: {
@@ -84,6 +90,12 @@ const translations = {
         zones: 'Zones : West Island, Laval, Rive-Sud',
         specialty: 'Spéc : Windows 11 / Linux Personnalisé',
         mission: 'Mission : Zéro Temps d\'Arrêt',
+      },
+      labels: {
+        location: 'EMPLACEMENT',
+        zones: 'COUVERTURE',
+        specialty: 'SPÉCIALITÉ',
+        mission: 'PROTOCOLE',
       }
     },
     contact: {
@@ -228,19 +240,19 @@ function App() {
               
               <div className="specs-container">
                 <div className="spec-row">
-                  <span className="spec-label">LOCATION</span>
+                  <span className="spec-label">{t.about.labels.location}</span>
                   <span className="spec-value">{t.about.specs.location}</span>
                 </div>
                 <div className="spec-row">
-                  <span className="spec-label">COVERAGE</span>
+                  <span className="spec-label">{t.about.labels.zones}</span>
                   <span className="spec-value">{t.about.specs.zones}</span>
                 </div>
                 <div className="spec-row">
-                  <span className="spec-label">SPECIALTY</span>
+                  <span className="spec-label">{t.about.labels.specialty}</span>
                   <span className="spec-value">{t.about.specs.specialty}</span>
                 </div>
                 <div className="spec-row">
-                  <span className="spec-label">PROTOCOL</span>
+                  <span className="spec-label">{t.about.labels.mission}</span>
                   <span className="spec-value">{t.about.specs.mission}</span>
                 </div>
               </div>
