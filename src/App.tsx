@@ -163,7 +163,7 @@ function App() {
             <div className="contact-container">
               <p className="contact-subtitle">{t.contact.message}</p>
               <form 
-                action="https://formspree.io/f/gab@gabsolution.ca" 
+                action="https://formspree.io/f/myknnyqj" 
                 method="POST"
                 className="contact-form"
               >
