@@ -172,16 +172,40 @@
   background-color: #1a1a1a;
 }
 
-.contact-info p {
-  margin-bottom: 40px;
-  font-size: 1.4rem;
-  color: var(--white);
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact-links {
+.contact-subtitle {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.contact-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
 }
 
 /* Footer */

@@ -33,9 +33,11 @@ const translations = {
     },
     contact: {
       title: 'Contact Us',
-      email: 'Email',
-      phone: 'Phone',
       message: 'Ready to solve your IT problems?',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Your Email',
+      messagePlaceholder: 'How can we help?',
+      send: 'Send Message',
     },
     footer: {
       rights: 'All rights reserved.',
@@ -70,9 +72,11 @@ const translations = {
     },
     contact: {
       title: 'Contactez-nous',
-      email: 'Courriel',
-      phone: 'Téléphone',
       message: 'Prêt à résoudre vos problèmes informatiques ?',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Votre Courriel',
+      messagePlaceholder: 'Comment pouvons-nous vous aider ?',
+      send: 'Envoyer le message',
     },
     footer: {
       rights: 'Tous droits réservés.',
@@ -156,11 +160,24 @@ function App() {
         <section id="contact" className="contact-section">
           <div className="container">
             <h2>{t.contact.title}</h2>
-            <div className="contact-info">
-              <p>{t.contact.message}</p>
-              <div className="contact-links">
-                <a href="mailto:info@gabsolution.ca" className="btn btn-outline">Email: info@gabsolution.ca</a>
-              </div>
+            <div className="contact-container">
+              <p className="contact-subtitle">{t.contact.message}</p>
+              <form 
+                action="https://formspree.io/f/info@gabsolution.ca" 
+                method="POST"
+                className="contact-form"
+              >
+                <div className="form-group">
+                  <input type="text" name="name" placeholder={t.contact.namePlaceholder} required />
+                </div>
+                <div className="form-group">
+                  <input type="email" name="_replyto" placeholder={t.contact.emailPlaceholder} required />
+                </div>
+                <div className="form-group">
+                  <textarea name="message" placeholder={t.contact.messagePlaceholder} rows={5} required></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary">{t.contact.send}</button>
+              </form>
             </div>
           </div>
         </section>
