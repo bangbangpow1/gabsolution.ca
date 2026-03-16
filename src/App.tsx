@@ -105,6 +105,8 @@ function App() {
     const browserLang = navigator.language || 'fr';
     return browserLang.startsWith('en') ? 'en' : 'fr';
   })
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const t = translations[lang]
 
   useEffect(() => {
@@ -116,8 +118,16 @@ function App() {
     setLang(prev => prev === 'en' ? 'fr' : 'en')
   }
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  }
+
   return (
-    <div className="app">
+    <div className={`app ${isMenuOpen ? 'menu-open' : ''}`}>
       <header className="header">
         <div className="container header-content">
           <div className="logo-area">
@@ -132,8 +142,21 @@ function App() {
               {lang === 'en' ? 'FR' : 'EN'}
             </button>
           </nav>
+
+          <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+            <div className="menu-icon"></div>
+          </button>
         </div>
       </header>
+
+      <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
+        <a href="#services" onClick={closeMenu}>{t.nav.services}</a>
+        <a href="#about" onClick={closeMenu}>{t.nav.about}</a>
+        <a href="#contact" onClick={closeMenu}>{t.nav.contact}</a>
+        <button className="lang-toggle" onClick={() => { toggleLang(); closeMenu(); }}>
+          {lang === 'en' ? 'FR' : 'EN'}
+        </button>
+      </div>
 
       <main>
         <section className="hero">
