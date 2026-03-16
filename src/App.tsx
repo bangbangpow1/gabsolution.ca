@@ -12,26 +12,26 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Expert IT Support & OS Solutions',
-      subtitle: 'Precision installation and configuration for Windows & Linux environments. Remote support available 24/7.',
+      title: 'Montreal\'s Premier IT Support & OS Solutions',
+      subtitle: 'Specialized in Windows 11/10 & Linux (Ubuntu, Debian) installation, migration, and optimization. 24/7 Remote technical support for Montreal, West Island, and Laval.',
       cta: 'Initialize Support',
     },
     services: {
       title: 'Core Protocols',
       os: {
         id: 'SYS.INSTALL.01',
-        title: 'OS Migration',
-        desc: 'Clean installation of Windows (10/11) or Linux (Ubuntu, Debian, Fedora). Optimized for peak performance and security compliance.',
+        title: 'OS Migration & Install',
+        desc: 'Full system wipe and clean installation of Windows 11, 10, or Linux distributions (Ubuntu, Fedora, CentOS). Includes driver optimization, security hardening, and bloatware removal.',
       },
       remote: {
         id: 'NET.SUPPORT.02',
-        title: 'Remote Link',
-        desc: 'Secure remote troubleshooting for software errors, driver conflicts, and network diagnostics. Rapid response across Montreal.',
+        title: 'Remote Diagnostics',
+        desc: 'Instant remote desktop support for software crashes, virus removal, network configuration, and printer setup. Secure, encrypted connection for clients across Quebec.',
       },
     },
     about: {
       title: 'System Specs',
-      content: 'Gabsolution is a specialized technical unit dedicated to system integrity and performance. We deploy custom Windows and Linux environments tailored to specific user requirements.',
+      content: 'Gabsolution is Montreal\'s trusted IT partner for home and small business. We provide enterprise-grade system administration, custom PC configuration, and reliable troubleshooting for complex OS issues.',
       specs: {
         location: 'Base: Montreal, QC',
         zones: 'Zones: West Island, Laval, South Shore',
@@ -47,7 +47,7 @@ const translations = {
     },
     contact: {
       title: 'Establish Uplink',
-      message: 'Ready to solve your IT problems?',
+      message: 'Ready to optimize your infrastructure?',
       namePlaceholder: 'Enter Name',
       emailPlaceholder: 'Enter Email Address',
       messagePlaceholder: 'Command / Message',
@@ -65,26 +65,26 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Support TI Expert et Solutions OS',
-      subtitle: 'Installation et configuration de précision pour environnements Windows et Linux. Support à distance disponible 24/7.',
+      title: 'Support TI Expert et Solutions OS à Montréal',
+      subtitle: 'Spécialistes en installation Windows 11/10 & Linux (Ubuntu, Debian). Support technique à distance 24/7 pour Montréal, West Island et Laval.',
       cta: 'Initialiser le Support',
     },
     services: {
       title: 'Protocoles Principaux',
       os: {
         id: 'SYS.INSTALL.01',
-        title: 'Migration OS',
-        desc: 'Installation propre de Windows (10/11) ou Linux (Ubuntu, Debian, Fedora). Optimisé pour la performance et la sécurité.',
+        title: 'Migration & Install OS',
+        desc: 'Formatage complet et installation propre de Windows 11, 10 ou Linux (Ubuntu, Fedora). Inclut l\'optimisation des pilotes, la sécurisation du système et la suppression des logiciels inutiles.',
       },
       remote: {
         id: 'NET.SUPPORT.02',
-        title: 'Lien Distant',
-        desc: 'Dépannage à distance sécurisé pour erreurs logicielles et conflits de pilotes. Réponse rapide à travers Montréal.',
+        title: 'Diagnostic à Distance',
+        desc: 'Assistance à distance immédiate pour pannes logicielles, suppression de virus, configuration réseau et imprimantes. Connexion sécurisée et cryptée partout au Québec.',
       },
     },
     about: {
       title: 'Spécifications Système',
-      content: 'Gabsolution est une unité technique spécialisée dédiée à l\'intégrité et la performance des systèmes. Nous déployons des environnements Windows et Linux personnalisés.',
+      content: 'Gabsolution est votre partenaire TI de confiance à Montréal pour la maison et les PME. Nous offrons une administration système de niveau entreprise et un dépannage fiable pour les problèmes d\'OS complexes.',
       specs: {
         location: 'Base : Montréal, QC',
         zones: 'Zones : West Island, Laval, Rive-Sud',
@@ -100,7 +100,7 @@ const translations = {
     },
     contact: {
       title: 'Établir la Liaison',
-      message: 'Prêt à résoudre vos problèmes ?',
+      message: 'Prêt à optimiser votre infrastructure ?',
       namePlaceholder: 'Entrez Votre Nom',
       emailPlaceholder: 'Entrez Votre Courriel',
       messagePlaceholder: 'Commande / Message',
