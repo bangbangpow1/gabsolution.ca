@@ -1,13 +1,14 @@
 :root {
-  --primary: #004a99;
-  --primary-light: #0066cc;
-  --secondary: #6c757d;
-  --accent: #ffc107;
-  --bg: #f8f9fa;
-  --text: #212529;
+  --primary: #00a8ff; /* A more vibrant blue to pop on dark */
+  --primary-light: #44bdff;
+  --secondary: #a4b0be;
+  --accent: #fbc531;
+  --bg: #121212; /* Dark background */
+  --surface: #1e1e1e; /* Slightly lighter dark for cards */
+  --text: #f5f6fa;
   --white: #ffffff;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --radius: 8px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  --radius: 12px;
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -40,7 +41,7 @@ ul {
 }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 h2 {
@@ -52,7 +53,7 @@ h2 {
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: var(--radius);
   font-weight: 600;
   cursor: pointer;
@@ -62,12 +63,13 @@ h2 {
 
 .btn-primary {
   background-color: var(--primary);
-  color: var(--white);
+  color: #121212; /* Dark text on bright button */
 }
 
 .btn-primary:hover {
   background-color: var(--primary-light);
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 168, 255, 0.4);
 }
 
 .btn-outline {
@@ -78,7 +80,7 @@ h2 {
 
 .btn-outline:hover {
   background-color: var(--primary);
-  color: var(--white);
+  color: #121212;
 }
 
 /* Animations */

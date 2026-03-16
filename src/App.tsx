@@ -98,7 +98,7 @@ function App() {
       <header className="header">
         <div className="container header-content">
           <div className="logo-area">
-            <img src="/Gabsolution-Final_Single-Logo.png" alt="Gabsolution Icon" className="header-icon" />
+            <img src="./Gabsolution-Final_Single-Logo.png" alt="Gabsolution Icon" className="header-icon" />
             <span className="brand-name">Gabsolution</span>
           </div>
           <nav className="nav">
@@ -115,7 +115,7 @@ function App() {
       <main>
         <section className="hero">
           <div className="container hero-content">
-            <img src="/Gabsolution-Final.png" alt="Gabsolution Full Logo" className="hero-logo fade-in" />
+            <img src="./Gabsolution-Final.png" alt="Gabsolution Full Logo" className="hero-logo fade-in" />
             <h1 className="fade-in">{t.hero.title}</h1>
             <p className="fade-in">{t.hero.subtitle}</p>
             <a href="#contact" className="btn btn-primary fade-in">{t.hero.cta}</a>

@@ -2,8 +2,9 @@
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: var(--white);
-  box-shadow: var(--shadow);
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -31,6 +32,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
+  letter-spacing: -0.5px;
 }
 
 .nav {
@@ -42,7 +44,8 @@
 .nav a {
   font-weight: 500;
   color: var(--secondary);
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .nav a:hover {
@@ -50,11 +53,11 @@
 }
 
 .lang-toggle {
-  background-color: var(--bg);
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  padding: 5px 10px;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -62,37 +65,46 @@
 
 .lang-toggle:hover {
   background-color: var(--primary);
-  color: var(--white);
+  color: #121212;
+  border-color: var(--primary);
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #e9ecef 0%, #ffffff 100%);
+  background: radial-gradient(circle at top right, rgba(0, 168, 255, 0.1), transparent),
+              radial-gradient(circle at bottom left, rgba(0, 168, 255, 0.05), transparent);
   text-align: center;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 .hero-logo {
-  max-width: 300px;
-  margin-bottom: 30px;
+  max-width: 320px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0 0 15px rgba(0, 168, 255, 0.2));
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  color: var(--primary);
+  font-size: 4rem;
+  margin-bottom: 24px;
+  color: var(--white);
+  line-height: 1.1;
+  font-weight: 800;
 }
 
 .hero p {
   font-size: 1.25rem;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   color: var(--secondary);
-  max-width: 700px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Services */
+.services-section {
+  background-color: #1a1a1a;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -100,30 +112,40 @@
 }
 
 .service-card {
-  background-color: var(--white);
-  padding: 40px;
+  background-color: var(--surface);
+  padding: 48px;
   border-radius: var(--radius);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
+  border-color: rgba(0, 168, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .service-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+  display: block;
 }
 
 .service-card h3 {
-  margin-bottom: 15px;
-  color: var(--primary);
+  margin-bottom: 16px;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: var(--secondary);
+  font-size: 1rem;
 }
 
 /* About */
 .about-section {
-  background-color: var(--white);
+  background-color: var(--bg);
 }
 
 .about-content {
@@ -133,23 +155,27 @@
 }
 
 .about-content p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--secondary);
 }
 
 .location {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary);
+  font-size: 1.3rem;
 }
 
 /* Contact */
 .contact-section {
   text-align: center;
+  background-color: #1a1a1a;
 }
 
 .contact-info p {
-  margin-bottom: 30px;
-  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  color: var(--white);
 }
 
 .contact-links {
@@ -160,16 +186,21 @@
 
 /* Footer */
 .footer {
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 40px 0;
+  background-color: var(--bg);
+  color: var(--secondary);
+  padding: 60px 0;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer p {
+  font-size: 0.9rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .nav {
@@ -177,6 +208,10 @@
   }
   
   .brand-name {
-    display: none;
+    font-size: 1.2rem;
+  }
+
+  .service-card {
+    padding: 32px;
   }
 }
