@@ -200,7 +200,7 @@ function App() {
             <div className="about-layout">
               <div className="about-text">
                 <p>{t.about.content}</p>
-                <a href="#contact" className="btn btn-outline">{t.nav.contact} ></a>
+                <a href="#contact" className="btn btn-outline">{t.nav.contact} &gt;</a>
               </div>
               
               <div className="specs-container">
