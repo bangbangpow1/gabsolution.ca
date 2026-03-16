@@ -11,25 +11,25 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Your IT Solution in Montreal',
-      subtitle: 'Professional OS Installation and Remote Support for Windows & Linux.',
+      title: 'Expert IT Support & OS Solutions in Montreal',
+      subtitle: 'Professional Windows and Linux installation, configuration, and reliable remote support services in Montreal, Quebec.',
       cta: 'Get Support Now',
     },
     services: {
-      title: 'Our Services',
+      title: 'Expert IT Services',
       os: {
-        title: 'OS Installation',
-        desc: 'Clean installation of Windows or Linux (Ubuntu, Debian, Fedora, etc.). We ensure your system is up-to-date and optimized.',
+        title: 'OS Installation & Migration',
+        desc: 'Clean installation and configuration of Windows (10/11) or Linux distributions (Ubuntu, Debian, CentOS, Fedora). We ensure your system is optimized for peak performance and security.',
       },
       remote: {
-        title: 'Remote Support',
-        desc: 'Quick and secure remote troubleshooting for software issues, configuration, and maintenance.',
+        title: '24/7 Remote Technical Support',
+        desc: 'Secure and fast remote troubleshooting for software errors, driver issues, network configuration, and system maintenance. Expert assistance across the Island of Montreal.',
       },
     },
     about: {
       title: 'About Gabsolution',
-      content: 'Based in Montreal, Gabsolution is dedicated to providing reliable IT support and system installation services. Whether you need a fresh start with a new OS or expert remote assistance, we are here to help.',
-      location: 'Proudly serving Montreal and beyond.',
+      content: 'Based in Montreal, Gabsolution is dedicated to providing reliable IT support and system installation services. We specialize in Windows 11 upgrades and custom Linux environments for both personal and business needs.',
+      location: 'Serving the Greater Montreal Area (West Island, Laval, South Shore).',
     },
     contact: {
       title: 'Contact Us',
@@ -50,25 +50,25 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Votre Solution TI à Montréal',
-      subtitle: 'Installation de systèmes d\'exploitation et support à distance pour Windows et Linux.',
+      title: 'Support TI Expert et Solutions d\'OS à Montréal',
+      subtitle: 'Installation professionnelle de Windows et Linux, configuration et services de support à distance fiables à Montréal, Québec.',
       cta: 'Obtenir du Support',
     },
     services: {
-      title: 'Nos Services',
+      title: 'Services TI Experts',
       os: {
-        title: 'Installation d\'OS',
-        desc: 'Installation propre de Windows ou Linux (Ubuntu, Debian, Fedora, etc.). Nous nous assurons que votre système est à jour et optimisé.',
+        title: 'Installation et Migration d\'OS',
+        desc: 'Installation propre et configuration de Windows (10/11) ou des distributions Linux (Ubuntu, Debian, CentOS, Fedora). Nous optimisons votre système pour la performance et la sécurité.',
       },
       remote: {
-        title: 'Support à Distance',
-        desc: 'Dépannage à distance rapide et sécurisé pour les problèmes logiciels, la configuration et la maintenance.',
+        title: 'Support Technique à Distance 24/7',
+        desc: 'Dépannage à distance sécurisé pour les erreurs logicielles, pilotes, configuration réseau et maintenance. Assistance experte partout à Montréal.',
       },
     },
     about: {
       title: 'À Propos de Gabsolution',
-      content: 'Basé à Montréal, Gabsolution se consacre à fournir un support informatique fiable et des services d\'installation de systèmes. Que vous ayez besoin d\'un nouveau départ avec un OS frais ou d\'une assistance à distance experte, nous sommes là pour vous aider.',
-      location: 'Fièrement au service de Montréal et des environs.',
+      content: 'Basé à Montréal, Gabsolution se consacre à fournir un support informatique fiable et des services d\'installation de systèmes. Nous nous spécialisons dans les mises à niveau Windows 11 et les environnements Linux personnalisés.',
+      location: 'Desservant la grande région de Montréal (West Island, Laval, Rive-Sud).',
     },
     contact: {
       title: 'Contactez-nous',
@@ -92,7 +92,7 @@ function App() {
   const t = translations[lang]
 
   useEffect(() => {
-    document.title = `Gabsolution - ${lang === 'en' ? 'IT Services' : 'Services Informatiques'}`
+    document.title = `Gabsolution - ${lang === 'en' ? 'Expert IT Services Montreal' : 'Services TI Experts Montréal'}`
     document.documentElement.lang = lang
   }, [lang])
 
