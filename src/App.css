@@ -1,4 +1,4 @@
-/* App.css - Refined Minimalism Theme */
+/* App.css - Refined Minimalism Theme (Dark Mode) */
 
 /* Header */
 .header {
@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(250, 250, 250, 0.8);
+  background: rgba(5, 5, 5, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
@@ -30,6 +30,7 @@
 .header-icon {
   height: 36px;
   transition: var(--transition);
+  filter: brightness(1.2);
 }
 
 .brand-name {
@@ -74,7 +75,7 @@
 .lang-toggle:hover {
   border-color: var(--text);
   background: var(--text);
-  color: var(--surface);
+  color: var(--bg);
 }
 
 /* Mobile Menu Toggle */
@@ -121,7 +122,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: var(--surface);
+  background: var(--bg);
   padding: 120px 40px;
   display: flex;
   flex-direction: column;
@@ -153,7 +154,7 @@
 
 .hero-content {
   max-width: 900px;
-  text-align: left; /* Cleaner left alignment */
+  text-align: left;
 }
 
 .status-badge {
@@ -174,9 +175,10 @@
 .status-dot {
   width: 8px;
   height: 8px;
-  background-color: #34c759; /* Modern green */
+  background-color: #30d158; /* iOS-style Green */
   border-radius: 50%;
   animation: pulse 2s infinite;
+  box-shadow: 0 0 10px rgba(48, 209, 88, 0.4);
 }
 
 @keyframes pulse {
@@ -190,6 +192,7 @@
   line-height: 0.95;
   margin-bottom: 32px;
   letter-spacing: -0.05em;
+  color: #fff;
 }
 
 .hero p {
@@ -224,7 +227,7 @@
 }
 
 .service-card:hover {
-  border-color: var(--text);
+  border-color: var(--primary);
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
 }
@@ -239,17 +242,20 @@
   justify-content: center;
   font-size: 2rem;
   transition: var(--transition);
+  border: 1px solid var(--border);
 }
 
 .service-card:hover .service-icon-wrapper {
   background: var(--primary);
   color: #fff;
+  border-color: var(--primary);
 }
 
 .service-card h3 {
   font-size: 1.75rem;
   letter-spacing: -0.03em;
   margin-bottom: 12px;
+  color: #fff;
 }
 
 .service-card p {
@@ -303,6 +309,7 @@
 .spec-value {
   font-weight: 700;
   font-size: 1.1rem;
+  color: #fff;
 }
 
 /* Contact Section */
@@ -315,6 +322,7 @@
 .contact-info h3 {
   font-size: 2rem;
   margin-bottom: 24px;
+  color: #fff;
 }
 
 .contact-info p {
@@ -338,7 +346,7 @@
 .form-label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--text-muted);
 }
 
 .form-input {
@@ -349,13 +357,14 @@
   border-radius: var(--radius);
   font-family: var(--font-body);
   font-size: 1rem;
+  color: #fff;
   transition: var(--transition);
 }
 
 .form-input:focus {
   outline: none;
-  border-color: var(--text);
-  background: #fff;
+  border-color: var(--primary);
+  background: #1a1a1a;
   box-shadow: 0 0 0 4px var(--primary-glow);
 }
 
@@ -363,7 +372,7 @@
 .footer {
   padding: 80px 0;
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--bg);
 }
 
 .footer-content {

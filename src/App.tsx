@@ -26,7 +26,7 @@ const translations = {
       },
       windows: {
         title: 'Windows 11 Setup',
-        desc: 'Fresh install of Windows 11. Optimized for performance, debloated of unnecessary software, and hardened for security.',
+        desc: 'Fresh install of Windows 11. Optimized for performance and debloated of unnecessary software.',
         icon: '🪟',
       },
       sysadmin: {
@@ -85,7 +85,7 @@ const translations = {
       },
       windows: {
         title: 'Installation Windows 11',
-        desc: 'Nouvelle installation de Windows 11. Optimisé pour la performance, débarrassé des logiciels inutiles et sécurisé.',
+        desc: 'Nouvelle installation de Windows 11. Optimisé pour la performance et débarrassé des logiciels inutiles.',
         icon: '🪟',
       },
       sysadmin: {
