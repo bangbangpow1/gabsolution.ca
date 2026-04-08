@@ -12,7 +12,7 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Expert OS Installation & System Administration',
+      title: 'Professional OS Deployment & System Administration',
       subtitle: 'Professional setup and optimization for Linux distributions and Windows 11. Secure, reliable IT infrastructure management for home and business.',
       cta: 'Get Started',
       secondary: 'Learn More',
@@ -71,7 +71,7 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Installation OS Expert et Administration Système',
+      title: 'Déploiement d\'OS Professionnel et Administration Système',
       subtitle: 'Installation et optimisation professionnelle pour Linux et Windows 11. Gestion d\'infrastructure TI sécurisée pour particuliers et entreprises.',
       cta: 'Commencer',
       secondary: 'En Savoir Plus',
